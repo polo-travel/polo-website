@@ -1,6 +1,5 @@
 <template>
     <div class="home">
-        <h1>Hoome</h1>
         <navigation></navigation>
         <h1 class="title">
             polo website
