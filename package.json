@@ -13,5 +13,9 @@
   "dependencies": {
     "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "gsap": "^3.2.6"
+  }
 }
