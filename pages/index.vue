@@ -1,39 +1,15 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        polo website
-      </h1>
-      <h2 class="subtitle">
-        polo !!!!!! thewebsite
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <home></home>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Home from '~/components/Home/Home.vue'
 
 export default {
   components: {
-    Logo
+    Home
   }
 }
 </script>
