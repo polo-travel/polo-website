@@ -2,7 +2,9 @@
     <div class="home">
         <navigation></navigation>
 
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="1059" viewBox="0 0 1366 1059">
+
+<div class="svgContainer">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1366 1059"  preserveAspectRatio='none'>
             <defs>
                 <clipPath id="clip-path">
                     <rect id="Rectangle_176" data-name="Rectangle 176" width="1366" height="1059" fill="#fff"/>
@@ -25,12 +27,17 @@
                 </filter>
             </defs>
             <g id="Groupe_de_masques_1" data-name="Groupe de masques 1" clip-path="url(#clip-path)">
-                <ellipse id="Ellipse_59" data-name="Ellipse 59" cx="594.65" cy="487.65" rx="594.65" ry="487.65" transform="translate(-380.97 -152.41)" fill="url(#linear-gradient)"/>
-                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_81)">
-                    <path id="Tracé_81-2" data-name="Tracé 81" d="M173.4,330.23C107.956,384.471-1.874,475.563,45.75,557.325c42.272,72.766,166.585,64.406,267.626,165.8,83.022,83.4,41.879,132.224,133.838,180.244,88.374,46.048,208.17,43.974,249.313,43.239,212.687-3.712,442.41-101.224,492.636-223.483,54.841-133.561-147.29-192.216-79.095-317.183,63.482-116.105,276.365-135.835,267.626-219.9-7.708-73.87-178.663-121.824-194.619-126.137C862.522-27.248,398.411,143.633,173.4,330.23Z" transform="translate(48.71 -123.97)" fill="url(#linear-gradient-2)"/>
+                <g id="Groupe_41" data-name="Groupe 41">
+                    <ellipse id="Ellipse_59" data-name="Ellipse 59" cx="594.65" cy="487.65" rx="594.65" ry="487.65" transform="translate(-380.97 -152.41)" fill="url(#linear-gradient)"/>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_81)">
+                        <path id="Tracé_81-2" data-name="Tracé 81" d="M173.4,330.23C107.956,384.471-1.874,475.563,45.75,557.325c42.272,72.766,166.585,64.406,267.626,165.8,83.022,83.4,41.879,132.224,133.838,180.244,88.374,46.048,208.17,43.974,249.313,43.239,212.687-3.712,442.41-101.224,492.636-223.483,54.841-133.561-147.29-192.216-79.095-317.183,63.482-116.105,276.365-135.835,267.626-219.9-7.708-73.87-178.663-121.824-194.619-126.137C862.522-27.248,398.411,143.633,173.4,330.23Z" transform="translate(48.71 -123.97)" fill="url(#linear-gradient-2)"/>
+                    </g>
                 </g>
             </g>
         </svg>
+</div>
+
+
 
         <h1 class="title">
             polo website
