@@ -36,15 +36,22 @@
             </g>
         </svg>
 </div>
+        <div class="contentWrapper">
+            <div class="home-device">
+                <img src="../../static/img/home-polo-app.svg" alt="">
+            </div>
+            <div class="home-content">
+                <span class="home-content--title">Prêt.e pour l'inconnu ?</span>
+                <p class="home-content--description">Avec l’application Polo, laissez-vous guider et redécouvrez la
+                    France avec un voyage que vous n’êtes pas prêt d’oublier !
+                </p>
+                <div class="home-stores">
+                    <img src="../../static/img/appstore.png" alt="">
+                    <img src="../../static/img/googleplay.png" alt="">
+                </div>
+            </div>
+        </div>
 
-
-
-        <h1 class="title">
-            polo website
-        </h1>
-        <h2 class="subtitle">
-            polo !!!!!! thewebsite
-        </h2>
     </div>
 </template>
 
