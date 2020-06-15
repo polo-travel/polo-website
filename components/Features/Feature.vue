@@ -1,7 +1,8 @@
 <template>
     <div class="feature">
         <rounded title="Une expérience à offrir
-ou à s’offrir" imgUrl="arrow.png"></rounded>
+ou à s’offrir" imgUrl="app-travel.svg" description="Faites le plus incroyable des cadeaux et offrez à vos proches
+une aventure pleine de surprises et d’activités insolites."></rounded>
     </div>
 </template>
 
