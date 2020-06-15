@@ -1,0 +1,58 @@
+.home
+  height 100vh
+  background blue-medium
+  position relative
+  &-content
+    width 60%
+    margin-top -60px
+    &--title
+      gilroyBold()
+      font-size: 50px
+
+    &--description
+      gilroyMedium()
+      max-width 460px
+  &-device
+    width 40%
+    padding-left 60px
+    display flex
+    justify-content center
+    img
+      width 70vh
+  &-stores
+    display flex
+    img
+      width 140px
+      height 140px
+      &:first-of-type
+        margin-right 20px
+  &-arrow
+    position absolute
+    bottom 10px
+  .svgContainer
+    position absolute
+    top 0
+    width 100vw
+    height 100vh
+    svg
+      position: absolute
+      width 100vw
+      height 150vh
+  .contentWrapper
+    position relative
+    display flex
+    height calc(100% - 100px)
+    justify-content center
+    align-items center
+
+
+//.title
+//  gilroyBold()
+//  color green
+//  display block
+//
+//.subtitle
+//  gilroyMedium()
+//  color beige
+//
+
