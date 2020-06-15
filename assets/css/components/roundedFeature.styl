@@ -5,22 +5,42 @@
   display flex
   justify-content center
   align-items center
-  &-title
-    gilroyBold()
-    color white
-    font-size: 50px
-    max-width 530px
-  &-description
-    gilroyMedium()
-    color white
-    font-size: 18px
-    max-width 520px
+  &-content
+    padding-left: 60px
+    z-index 1
+    &--title
+      gilroyBold()
+      color white
+      font-size: 50px
+      max-width 530px
+      margin-bottom: 30px
+    &--description
+      gilroyMedium()
+      color white
+      font-size: 18px
+      max-width 520px
+  &-image
+    width: 40%
+    z-index 1
+    display flex
+    justify-content center
+    transform translateY(25vh)
+    img
+      width 60vh
   //&-content
   //
   //  height 100%
   &-pointsGroup
     position absolute
+    z-index 1
     left 50%
     top: 50%
     width 90%
     transform translate(-50%,-50%)
+
+.bgshape
+  position absolute
+  bottom -20vh
+  width 130vw
+  +desktop()
+    bottom -10vh
