@@ -50,6 +50,9 @@
                     <img src="../../static/img/googleplay.png" alt="">
                 </div>
             </div>
+
+            <img class="home-arrow" src="../../static/img/arrow.png" alt="">
+
         </div>
 
     </div>
