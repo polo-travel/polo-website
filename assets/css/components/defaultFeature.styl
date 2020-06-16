@@ -1,0 +1,30 @@
+.defaultFeature
+  height 100vh
+  position relative
+  display flex
+  align-items center
+  &-image
+    width: 60%
+    height 100%
+    z-index 1
+    display flex
+    align-items flex-end
+    img
+      max-width 100%
+  &-content
+    padding-right: 60px
+    z-index 1
+    width 40%
+    &--title
+      gilroyBold()
+      font-size: 50px
+      max-width 530px
+      margin-bottom: 30px
+    &--description
+      gilroyMedium()
+      font-size: 18px
+      max-width 530px
+  &-bg
+    position absolute
+    z-index 0
+    width 100vw
