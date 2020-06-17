@@ -7,7 +7,7 @@
   align-items center
   &-content
     padding-left: 60px
-    z-index 1
+    z-index 6
     &--title
       gilroyBold()
       color white
@@ -21,7 +21,7 @@
       max-width 520px
   &-image
     width: 40%
-    z-index 1
+    z-index 6
     display flex
     justify-content center
     transform translateY(25vh)
@@ -32,7 +32,7 @@
   //  height 100%
   &-pointsGroup
     position absolute
-    z-index 1
+    z-index 3
     left 50%
     top: 50%
     width 90%
@@ -44,3 +44,21 @@
   width 130vw
   +desktop()
     bottom -10vh
+.red
+  background red
+  .roundedFeature
+    &-image
+      transform translateY(5vh)
+      img
+        width 70vh
+  .bgshape
+    bottom unset
+    top -16vh
+    width 160vw
+    z-index 5
+  ellipse
+    fill red
+    &:first-of-type
+      transform: translate(400px, 1960px);
+    &:last-of-type
+      transform: translate(-82px, 1987px);

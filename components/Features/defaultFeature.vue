@@ -1,5 +1,5 @@
 <template>
-    <div class="defaultFeature">
+    <div class="defaultFeature" >
 
         <div class="defaultFeature-image">
             <img :src="require(`../../static/img/${imgUrl}`)"  alt="">
@@ -21,8 +21,8 @@
             title: String,
             imgUrl: String,
             description: String,
-
-        }
+            display: Boolean
+        },
     }
 </script>
 
