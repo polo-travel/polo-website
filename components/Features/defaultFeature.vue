@@ -10,7 +10,7 @@
             <p class="defaultFeature-content--description">{{description}}</p>
         </div>
 
-        <img class="defaultFeature-bg" src="../../static/img/destination.svg" alt="">
+        <img class="defaultFeature-bg" :src="require(`../../static/img/${bgImg}`)" alt="">
     </div>
 </template>
 
@@ -21,7 +21,8 @@
             title: String,
             imgUrl: String,
             description: String,
-            display: Boolean
+            display: Boolean,
+            bgImg: String
         },
     }
 </script>
