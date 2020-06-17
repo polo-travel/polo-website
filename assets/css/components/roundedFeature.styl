@@ -27,9 +27,6 @@
     transform translateY(25vh)
     img
       width 60vh
-  //&-content
-  //
-  //  height 100%
   &-pointsGroup
     position absolute
     z-index 3
@@ -37,6 +34,11 @@
     top: 50%
     width 90%
     transform translate(-50%,-50%)
+  &-compass
+    position absolute
+    left 20px
+    z-index 2
+    opacity 0.3
 
 .bgshape
   position absolute
@@ -45,7 +47,7 @@
   +desktop()
     bottom -10vh
 .red
-  background red
+  background #E64526
   .roundedFeature
     &-image
       transform translateY(5vh)
@@ -55,10 +57,22 @@
     bottom unset
     top -16vh
     width 160vw
-    z-index 5
+    z-index 1
   ellipse
-    fill red
+    fill #E64526
     &:first-of-type
       transform: translate(400px, 1960px);
     &:last-of-type
       transform: translate(-82px, 1987px);
+  .bottomShape
+    bottom -25vh
+    position absolute
+    width 160vw
+    z-index 1
+  ellipse
+    fill #E64526
+    &:first-of-type
+      transform: translate(-82px, 1987px);
+    &:last-of-type
+      transform: translate(700px, 1990px);
+
