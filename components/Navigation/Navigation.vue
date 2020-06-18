@@ -2,7 +2,7 @@
     <div class="navigation">
         <logo></logo>
         <ul class="navigation-list">
-            <li class="navigation-item">Polo</li>
+            <li class="navigation-item"><nuxt-link to="/">Polo</nuxt-link></li>
             <li class="navigation-item"> <nuxt-link to="/team">La team</nuxt-link></li>
             <li class="navigation-item">Contact</li>
         </ul>
