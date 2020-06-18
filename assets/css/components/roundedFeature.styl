@@ -66,6 +66,9 @@
   width 130vw
   +desktop()
     bottom -10vh
+  +tablet()
+    bottom: -23vh
+    width: 530vw
 .red
   background #E64526
   .roundedFeature
@@ -77,11 +80,17 @@
         width 70vh
         +desktop()
           width 60vw
+        +tablet()
+          width 50vh
   .bgshape
     bottom unset
     top -16vh
     width 160vw
     z-index 1
+    +tablet()
+      width 190vw
+      top -8vh
+
   ellipse
     fill #E64526
     &:first-of-type
