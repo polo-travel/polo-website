@@ -1,0 +1,57 @@
+.defaultFeature
+  height 100vh
+  position relative
+  display flex
+  align-items center
+  +tablet()
+    flex-direction column
+    padding-top 25vh
+    padding-right 30px
+    padding-left 30px
+  &-image
+    width: 60%
+    height 100%
+    z-index 1
+    display flex
+    align-items flex-end
+    +tablet()
+      position absolute
+      height unset
+      width 60vh
+      bottom 0
+    img
+      max-width 100%
+  &-content
+    padding-right: 60px
+    z-index 1
+    width 40%
+    +tablet()
+      width unset
+      padding-right 0
+    &--title
+      gilroyBold()
+      font-size: 50px
+      max-width 530px
+      margin-bottom: 30px
+      +tablet()
+        font-size 30px
+    &--description
+      gilroyMedium()
+      font-size: 18px
+      max-width 530px
+  &-bg
+    position absolute
+    z-index 0
+    width 100vw
+    +tablet()
+      transform: rotate(13deg) translateY(-10vh);
+      bottom: 30vh;
+.basic
+  .defaultFeature-bg
+    right 0
+    bottom 0
+    width unset
+  .defaultFeature-image
+    display flex
+    justify-content center
+

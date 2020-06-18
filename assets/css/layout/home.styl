@@ -5,9 +5,17 @@
   &-content
     width 60%
     margin-top -60px
+    +desktop()
+      padding-right: 20px
+    +tablet()
+      width unset
+      margin-top 0
+      padding-right 0
     &--title
       gilroyBold()
       font-size: 50px
+      +tablet()
+        font-size 30px
 
     &--description
       gilroyMedium()
@@ -17,8 +25,14 @@
     padding-left 60px
     display flex
     justify-content center
+    +tablet()
+      padding-left 0
+      width 100%
     img
       width 70vh
+      +desktop()
+        width 40vw
+
   &-stores
     display flex
     img
@@ -29,6 +43,8 @@
   &-arrow
     position absolute
     bottom 10px
+    +tablet()
+      display none
   .svgContainer
     position absolute
     top 0
@@ -44,15 +60,8 @@
     height calc(100% - 100px)
     justify-content center
     align-items center
-
-
-//.title
-//  gilroyBold()
-//  color green
-//  display block
-//
-//.subtitle
-//  gilroyMedium()
-//  color beige
-//
+    +tablet()
+      flex-direction column-reverse
+      align-items center
+      padding 0 35px
 
