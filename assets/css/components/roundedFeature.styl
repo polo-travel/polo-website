@@ -5,17 +5,26 @@
   display flex
   justify-content center
   align-items center
+  +tablet()
+    flex-direction column
+    padding-top 40px
+    justify-content unset
   &-content
     padding-left: 60px
     z-index 6
     +desktop()
       padding-right 20px
+    +tablet()
+      padding 20px
+
     &--title
       gilroyBold()
       color white
       font-size: 50px
       max-width 530px
       margin-bottom: 30px
+      +tablet()
+        font-size 30px
     &--description
       gilroyMedium()
       color white
@@ -30,10 +39,14 @@
     +desktop()
       padding 0 10px
       transform translateY(30vh)
+    +tablet()
+      transform translateY(0vh)
     img
       width 60vh
       +desktop()
         width 50vw
+      +tablet()
+        width 50vh
   &-pointsGroup
     position absolute
     z-index 3
