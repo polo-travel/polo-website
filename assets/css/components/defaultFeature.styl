@@ -46,12 +46,20 @@
     +tablet()
       transform: rotate(13deg) translateY(-10vh);
       bottom: 30vh;
-.basic
+.defaultFeature.basic
+  +tablet()
+    padding-top 10vh
   .defaultFeature-bg
     right 0
     bottom 0
     width unset
+    +tablet()
+      transform: rotate(0deg) translateY(0vh);
   .defaultFeature-image
     display flex
     justify-content center
+    img
+      +tablet()
+        max-width unset
+        width: 30vh
 
