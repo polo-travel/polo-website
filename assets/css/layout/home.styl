@@ -27,11 +27,17 @@
     justify-content center
     +tablet()
       padding-left 0
+      position absolute
       width 100%
+      bottom 0px
+    +mobile()
+      bottom -20vh
     img
       width 70vh
       +desktop()
         width 40vw
+      +tablet()
+        width 30vh
 
   &-stores
     display flex
@@ -54,6 +60,8 @@
       position: absolute
       width 100vw
       height 150vh
+      +mobile()
+        height 110vh
   .contentWrapper
     position relative
     display flex
@@ -61,7 +69,8 @@
     justify-content center
     align-items center
     +tablet()
-      flex-direction column-reverse
+      flex-direction column
       align-items center
-      padding 0 35px
+      justify-content unset
+      padding 35px
 

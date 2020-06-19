@@ -1,5 +1,6 @@
 .team
   min-height calc(100vh + 50px)
+  overflow hidden
   +tablet()
     min-height calc(170vh + 50px)
 
@@ -13,11 +14,15 @@
       display block
       transform translate(0px) rotate(45deg)
       width unset
+    +tablet()
+      display none
   &-compass
     position absolute
     left 50%
     transform translateX(-50%)
     width 60vh
+    +tablet()
+      width 100vw
   &-title
     gilroyBold()
     font-size: 40px
@@ -86,6 +91,7 @@
     height calc(100vh - 100px)
     flex-direction column
     text-align center
+    //overflow-x hidden
   .membersWrapper
     display flex
     position relative
