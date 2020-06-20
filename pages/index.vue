@@ -14,12 +14,14 @@ import Teaser from '~/components/Video/Video.vue'
 import Feature from '~/components/Features/Feature.vue'
 import AppFooter from '~/components/Footer/Footer.vue'
 
+
+
 export default {
   components: {
     Home,
     Teaser,
     Feature,
     AppFooter
-  }
+  },
 }
 </script>

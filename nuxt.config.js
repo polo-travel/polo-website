@@ -23,12 +23,17 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/main.styl'
+    '@/assets/css/main.styl',
+    '@/assets/css/locomotive-scroll.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      src: "~/plugins/locomotiveScroll.js",
+      mode: "client"
+    }
   ],
   /*
   ** Nuxt.js dev-modules

@@ -49,7 +49,7 @@
             let menuItemsLink = document.querySelectorAll('.menu-overlay--item a')
 
 
-            gsap.set(html,{overflow:"unset"})
+            gsap.set(html,{overflow:"scroll"})
 
 
             menulink.addEventListener('click',()=>{
@@ -62,7 +62,7 @@
                     let tl = new TimelineMax()
 
                     tl.set(".menu-circle",{transform:"scale(60)"});
-                    tl.set(overlay,{opacity:1});
+                    tl.set(overlay,{opacity:1,display:'flex'});
                     tl.set(menuItemsLink,{translateY:"100%"})
                     gsap.set(html,{overflow:"hidden"})
 
@@ -78,7 +78,8 @@
                         opacity:0,onComplete: function(){
                             gsap.set(".menu-circle",{transform:"scale(2.1)"});
                             overlay.classList.remove("open")
-                            gsap.set(html,{overflow:"unset"})
+                            gsap.set(html,{overflow:"scroll"})
+                            gsap.set(overlay,{opacity:1,display:'none'});
                         }
                     })
 

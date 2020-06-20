@@ -2,12 +2,12 @@
 
     <div class="roundedFeature">
 
-        <div class="roundedFeature-content">
+        <div draggable="true" class="roundedFeature-content">
             <h2 class="roundedFeature-content--title">{{title}}</h2>
             <p class="roundedFeature-content--description">{{description}}</p>
         </div>
 
-        <div class="roundedFeature-image">
+        <div data-scroll data-scroll-speed="2" class="roundedFeature-image">
             <img :src="require(`../../static/img/${imgUrl}`)"  alt="">
         </div>
         <img class="roundedFeature-pointsGroup" src="../../static/img/points-group.svg" alt="">
