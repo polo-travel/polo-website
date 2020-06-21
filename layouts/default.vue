@@ -41,6 +41,7 @@
       this.lmS = new this.locomotiveScroll({
         el: el,
         smooth: true,
+        smoothMobile: true,
         scrollbarClass: "c-scrollbar"
       });
 
