@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
-    <home></home>
-    <teaser></teaser>
-    <feature></feature>
+  <div  class="container">
+    <home ></home>
+    <teaser ></teaser>
+    <feature ></feature>
     <app-footer></app-footer>
 
   </div>

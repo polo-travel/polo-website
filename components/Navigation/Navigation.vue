@@ -42,14 +42,12 @@
         },
 
         mounted(){
+            
             let menulink = document.querySelector('.menu-link')
             let menu = document.querySelector('.menu')
             let overlay = document.querySelector('.menu-overlay')
             let html = document.querySelector('html')
             let menuItemsLink = document.querySelectorAll('.menu-overlay--item a')
-
-
-            gsap.set(html,{overflow:"scroll"})
 
 
             menulink.addEventListener('click',()=>{
@@ -58,7 +56,7 @@
                 var result = classes.toggle("open");
                 if(result) {
 
-
+                    // window.addEventListener('scroll', noScroll);
                     let tl = new TimelineMax()
 
                     tl.set(".menu-circle",{transform:"scale(60)"});
@@ -78,8 +76,9 @@
                         opacity:0,onComplete: function(){
                             gsap.set(".menu-circle",{transform:"scale(2.1)"});
                             overlay.classList.remove("open")
-                            gsap.set(html,{overflow:"scroll"})
+                            gsap.set(html,{overflow:"hidden"})
                             gsap.set(overlay,{opacity:1,display:'none'});
+
                         }
                     })
 

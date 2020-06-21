@@ -1,5 +1,5 @@
 <template>
-    <div data-scroll class="home">
+    <div class="home">
         <navigation></navigation>
 
 
@@ -37,10 +37,10 @@
         </svg>
 </div>
         <div class="contentWrapper">
-            <div data-scroll data-scroll-speed="1" class="home-device">
+            <div  class="home-device">
                 <img src="../../static/img/home-polo-app.svg" alt="">
             </div>
-            <div data-scroll data-scroll-speed="2" class="home-content">
+            <div class="home-content">
                 <span class="home-content--title">Prêt.e pour l'inconnu ?</span>
                 <p class="home-content--description">Avec l’application Polo, laissez-vous guider et redécouvrez la
                     France avec un voyage que vous n’êtes pas prêt d’oublier !
