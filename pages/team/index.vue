@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container teamContainer">
         <div class="team">
             <navigation></navigation>
             <div class="contentWrapper">
