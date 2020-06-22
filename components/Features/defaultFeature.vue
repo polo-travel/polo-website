@@ -1,7 +1,7 @@
 <template>
     <div class="defaultFeature" >
 
-        <div data-scroll data-scroll-speed="1" data-scroll-call="defaultImage, green" data-scroll-offset="300" class="defaultFeature-image">
+        <div class="defaultFeature-image">
             <img :src="require(`../../static/img/${imgUrl}`)"  alt="">
         </div>
 
