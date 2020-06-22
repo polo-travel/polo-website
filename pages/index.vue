@@ -1,7 +1,7 @@
 <template>
   <div class="container indexContainer js-scroll" data-scroll-container>
     <home ></home>
-    <teaser ></teaser>
+    <teaser></teaser>
     <feature ></feature>
     <app-footer></app-footer>
 
@@ -23,6 +23,13 @@ export default {
     Feature,
     AppFooter
   },
+  data() {
+    return {
+      lmS: {
+        class: ''
+      }
+    };
+  },
   created() {
     console.log("created index")
   },
@@ -33,6 +40,7 @@ export default {
    //
    // console.log(content);
  },
+
   mounted() {
 
     let el;
@@ -45,20 +53,21 @@ export default {
       console.log("else")
     }
     let _that = this
-    this.lmS = new this.locomotiveScroll({
-      el: el,
-      smooth: true,
-      smoothMobile: true,
-      scrollbarClass: "c-scrollbar"
-    });
+
+    this.$nextTick(function () {
+
+      this.lmS = new this.locomotiveScroll({
+        el: el,
+        smooth: true,
+        smoothMobile: true,
+        scrollbarClass: "c-scrollbar"
+      })
+      this.lmS.update()
+      this.lmS.on('call', this.handler)
+      }.bind(this));
+
 
     console.log("lmS", this.lmS);
-
-
-
-    this.lmS.update()
-
-    // window.addEventListener("resize", function(){ this.lmS.update(); });
 
 
     console.log(window.innerHeight)
@@ -68,15 +77,9 @@ export default {
     console.log("killu")
     // scrollContainer.style.height = ''+scrollContainer.getBoundingClientRect().height +'px'
 
-    // scroll event
-    // this.lmS.on('scroll', func => {
+    // scroll event call EVENT
 
-    // setTimeout(function () {
-    //   this.lmS.update()
-    //   console.log("zzzzz")
-    // },5000000)
 
-    // });
 
 
     /** Navigation **/
@@ -145,9 +148,38 @@ export default {
       }
     })
 
+  },
+  methods: {
+    handler(caller) {
+      console.log('caller:', caller);
+      let [
+        func,
+        param,
+      ] = caller;
 
+      console.log('func', func)
+      this[func](param);
+    },
+    defaultImage(param){
+      console.log('hi!',param);
+      let img = document.querySelectorAll(".defaultFeature-image")
 
+      const style = getComputedStyle(img[0])
 
+      let op = style.opacity
+      console.log(op)
+        if (op == 0){
+          gsap.fromTo(img[0],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
+        }
+        else {
+          gsap.fromTo(img[1],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
+
+        }
+
+    },
+    sayBye(param){
+      console.log('bye.',param);
+    }
   },
   watch: {
     '$route.path': function() {
@@ -155,7 +187,14 @@ export default {
 
       this.lmS.destroy()
 
+    },
+    'lmS.class':{
+      handler: function (val, oldVal) {
+        console.log(val, oldVal);
+      },
+      deep: true
     }
+
   },
 
 }
