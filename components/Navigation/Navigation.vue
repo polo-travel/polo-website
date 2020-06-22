@@ -5,11 +5,6 @@
             <li class="navigation-item"><nuxt-link to="/">Polo</nuxt-link></li>
             <li class="navigation-item"> <nuxt-link to="/team">La team</nuxt-link></li>
         </ul>
-        <!--<div class="navigation-menu">-->
-            <!--<span></span>-->
-            <!--<span></span>-->
-            <!--<span></span>-->
-        <!--</div>-->
 
         <div class="menu">
             <span class="menu-circle"></span>
