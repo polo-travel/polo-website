@@ -160,26 +160,35 @@ export default {
       console.log('func', func)
       this[func](param);
     },
-    defaultImage(param){
-      console.log('hi!',param);
-      let img = document.querySelectorAll(".defaultFeature-image")
+    // defaultImage(param){
+    //   console.log('hi!',param);
+    //   let img = document.querySelectorAll(".defaultFeature-image")
+    //   let content = document.querySelectorAll(".defaultFeature-content")
+    //
+    //   const style = getComputedStyle(img[0])
+    //
+    //   let op = style.opacity
+    //   console.log(op)
+    //     if (op == 0){
+    //       let tl = new TimelineMax()
+    //       tl.fromTo(img[0],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
+    //       tl.fromTo(content[0],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
+    //     }
+    //     else {
+    //       let tl = new TimelineMax()
+    //       gsap.set(img[1],{opacity:0})
+    //       gsap.set(content[1],{opacity:0})
+    //
+    //       tl.fromTo(img[1],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
+    //       tl.fromTo(content[1],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
+    //
+    //
+    //     }
 
-      const style = getComputedStyle(img[0])
-
-      let op = style.opacity
-      console.log(op)
-        if (op == 0){
-          gsap.fromTo(img[0],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
-        }
-        else {
-          gsap.fromTo(img[1],1,{opacity:0,translateY:"50"},{opacity:1,translateY:"0"})
-
-        }
-
-    },
-    sayBye(param){
-      console.log('bye.',param);
-    }
+    // },
+    // sayBye(param){
+    //   console.log('bye.',param);
+    // }
   },
   watch: {
     '$route.path': function() {

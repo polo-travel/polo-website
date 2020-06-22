@@ -1,8 +1,8 @@
 <template>
 
-    <div class="roundedFeature">
+    <div data-scroll class="roundedFeature">
 
-        <div class="roundedFeature-content">
+        <div class="roundedFeature-content" data-scroll-offset="-300" data-scroll data-scroll-speed="1">
             <h2 class="roundedFeature-content--title">{{title}}</h2>
             <p class="roundedFeature-content--description">{{description}}</p>
         </div>
