@@ -56,7 +56,11 @@
             let el;
             if($nuxt.$route.path === "/team/"){
                 el = document.querySelector(".teamContainer")
-            }else{
+            }
+            else if($nuxt.$route.path === "/team"){
+                el = document.querySelector(".teamContainer")
+            }
+            else{
                 console.log("else")
             }
             let _that = this
