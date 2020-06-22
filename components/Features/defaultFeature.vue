@@ -1,11 +1,11 @@
 <template>
     <div class="defaultFeature" >
 
-        <div class="defaultFeature-image">
+        <div data-scroll data-scroll-speed="1" data-scroll-call="defaultImage, green" data-scroll-offset="300" class="defaultFeature-image">
             <img :src="require(`../../static/img/${imgUrl}`)"  alt="">
         </div>
 
-        <div class="defaultFeature-content">
+        <div class="defaultFeature-content" data-scroll-speed="1" data-scroll data-scroll-call="defaultImage, green" data-scroll-offset="300">
             <h2 class="defaultFeature-content--title">{{title}}</h2>
             <p class="defaultFeature-content--description">{{description}}</p>
         </div>

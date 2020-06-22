@@ -11,7 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "locomotive-scroll": "^3.5.4",
+    "nuxt": "^2.0.0",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "stylus": "^0.54.7",
