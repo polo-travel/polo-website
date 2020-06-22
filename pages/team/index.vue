@@ -54,12 +54,13 @@
         mounted() {
 
             let el;
-            if($nuxt.$route.path === "/"){
-                console.log(" mounted == ///")
-                el = document.querySelector(".indexContainer")
-            }else if($nuxt.$route.path === "/team"){
+            if($nuxt.$route.path === "/team/"){
                 el = document.querySelector(".teamContainer")
-            }else{
+            }
+            else if($nuxt.$route.path === "/team"){
+                el = document.querySelector(".teamContainer")
+            }
+            else{
                 console.log("else")
             }
             let _that = this
